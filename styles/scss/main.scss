@@ -1,0 +1,22 @@
+// =============================================================================
+// MAIN SCSS FILE
+// =============================================================================
+
+// Import variables first
+@use "variable" as *;
+
+// Import mixins
+@use "mixins" as *;
+
+// Import base styles
+@use "base";
+
+// Import components
+@use "header";
+
+// More component imports here as needed
+@use "sidebar";
+@use "main-content";
+@use "components";
+// @import 'buttons';
+// @import 'layout';

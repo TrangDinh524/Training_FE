@@ -1,0 +1,39 @@
+// =============================================================================
+// MAIN CONTENT COMPONENT
+// =============================================================================
+@use "mixins" as *;
+@use "variable" as *;
+// Main container to accommodate sidebar
+.main-container {
+  display: block;
+  min-height: 100vh;
+  margin-top: $header-height;
+}
+.main-content {
+  @include main-content-base;
+}
+
+.content-header {
+  @include content-header-layout;
+
+  &__left {
+    @include content-header-left;
+  }
+
+  &__icon {
+    font-size: $font-size-medium;
+    color: $color-primary;
+  }
+
+  &__title {
+    @include content-header-title;
+  }
+
+  &__right {
+    @include content-header-right;
+  }
+
+  &__selected {
+    @include content-header-selected;
+  }
+}

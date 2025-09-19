@@ -1,0 +1,39 @@
+// =============================================================================
+// SIDEBAR COMPONENT
+// =============================================================================
+@use "mixins" as *;
+@use "variable" as *;
+
+.sidebar {
+  @include sidebar-base;
+
+  &__nav {
+  }
+}
+
+.nav-item {
+  @include nav-item-base;
+  @include nav-item-hover;
+  text-decoration: none;
+  color: inherit;
+  display: block;
+
+  &--active {
+    @include nav-item-active;
+  }
+
+  &__title {
+    display: block;
+    font-size: $font-size-large;
+    font-weight: $font-weight-bold;
+    font-family: $font-family-primary;
+  }
+
+  &__subtitle {
+    display: block;
+    font-size: $font-size-base;
+    font-weight: $font-weight-normal;
+    font-family: $font-family-primary;
+    color: $color-primary;
+  }
+}

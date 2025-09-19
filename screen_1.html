@@ -1,0 +1,730 @@
+<!DOCTYPE html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>AIP for sales</title>
+    <link rel="stylesheet" href="styles/main.css" />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Noto+Sans+JP:wght@400;500;700&display=swap"
+      rel="stylesheet"
+    />
+  </head>
+  <body>
+    <!-- Header -->
+    <header class="header">
+      <div class="header__content">
+        <h1 class="header__title">AIP for sales</h1>
+        <div class="header__actions">
+          <button class="btn btn--red">
+            <span class="btn__icon">
+              <svg
+                width="16"
+                height="13"
+                viewBox="0 0 16 13"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M12.1929 11.4706H16V13H10.5899L12.1929 11.4706ZM2.17426 13L0.47109 11.375C0.163851 11.0819 0.00689226 10.7186 0.000213163 10.2853C-0.00646594 9.85196 0.143814 9.48235 0.451053 9.17647L9.26747 0.458824C9.57471 0.152941 9.95207 0 10.3996 0C10.8471 0 11.2244 0.146569 11.5317 0.439706L15.5191 4.24412C15.8263 4.53726 15.98 4.90049 15.98 5.33382C15.98 5.76716 15.8263 6.13039 15.5191 6.42353L8.78657 13H2.17426Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+            査定をやり直す
+          </button>
+          <button class="header__menu">
+            <!-- <span class="hamburger"> -->
+            <svg
+              width="21"
+              height="18"
+              viewBox="0 0 21 18"
+              fill="none"
+              xmlns="http://www.w3.org/2000/svg"
+            >
+              <path
+                d="M19.8068 7.875H0.943182C0.693034 7.875 0.453132 7.99353 0.276252 8.20451C0.0993706 8.41548 0 8.70163 0 9C0 9.29837 0.0993706 9.58452 0.276252 9.79549C0.453132 10.0065 0.693034 10.125 0.943182 10.125H19.8068C20.057 10.125 20.2969 10.0065 20.4737 9.79549C20.6506 9.58452 20.75 9.29837 20.75 9C20.75 8.70163 20.6506 8.41548 20.4737 8.20451C20.2969 7.99353 20.057 7.875 19.8068 7.875Z"
+                fill="#E60012"
+              />
+              <path
+                d="M0.943182 2.25H19.8068C20.057 2.25 20.2969 2.13147 20.4737 1.92049C20.6506 1.70952 20.75 1.42337 20.75 1.125C20.75 0.826631 20.6506 0.540484 20.4737 0.329505C20.2969 0.118527 20.057 0 19.8068 0H0.943182C0.693034 0 0.453132 0.118527 0.276252 0.329505C0.0993706 0.540484 0 0.826631 0 1.125C0 1.42337 0.0993706 1.70952 0.276252 1.92049C0.453132 2.13147 0.693034 2.25 0.943182 2.25Z"
+                fill="#E60012"
+              />
+              <path
+                d="M19.8068 15.75H0.943182C0.693034 15.75 0.453132 15.8685 0.276252 16.0795C0.0993706 16.2905 0 16.5766 0 16.875C0 17.1734 0.0993706 17.4595 0.276252 17.6705C0.453132 17.8815 0.693034 18 0.943182 18H19.8068C20.057 18 20.2969 17.8815 20.4737 17.6705C20.6506 17.4595 20.75 17.1734 20.75 16.875C20.75 16.5766 20.6506 16.2905 20.4737 16.0795C20.2969 15.8685 20.057 15.75 19.8068 15.75Z"
+                fill="#E60012"
+              />
+            </svg>
+            <!-- </span> -->
+          </button>
+        </div>
+      </div>
+    </header>
+
+    <div class="main-container">
+      <!-- Sidebar -->
+      <aside class="sidebar">
+        <nav class="sidebar__nav">
+          <a href="#manufacturer" class="nav-item nav-item--active">
+            <span class="nav-item__title">メーカー</span>
+            <span class="nav-item__subtitle">アウディ</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-item__title">車種</span>
+            <span class="nav-item__subtitle">アトラストラック</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-item__title">年代</span>
+            <span class="nav-item__subtitle">1998/08</span>
+          </a>
+          <a href="#drive" class="nav-item">
+            <span class="nav-item__title">駆動</span>
+            <span class="nav-item__subtitle">MR</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-item__title">グレード</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-item__title">カラー</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-item__title">評価点</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-item__title">走行距離</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-item__title">車検満了日</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-item__title">社員番号</span>
+          </a>
+          <a href="#" class="nav-item">
+            <span class="nav-item__title">査定結果</span>
+          </a>
+        </nav>
+      </aside>
+
+      <!-- Main Content 1 -->
+      <main class="main-content" id="manufacturer">
+        <!-- Title Section -->
+        <div class="content-header">
+          <div class="content-header__left">
+            <span class="content-header__icon">
+              <svg
+                width="26"
+                height="23"
+                viewBox="0 0 26 23"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M0 23V0H13.2364V5.0096H26V23H0ZM2.78916 20.2632H5.34187V17.7584H2.78916V20.2632ZM2.78916 15.2536H5.34187V12.7488H2.78916V15.2536ZM2.78916 10.244H5.34187V7.7392H2.78916V10.244ZM2.78916 5.2344H5.34187V2.72961H2.78916V5.2344ZM7.89458 20.2632H10.4473V17.7584H7.89458V20.2632ZM7.89458 15.2536H10.4473V12.7488H7.89458V15.2536ZM7.89458 10.244H10.4473V7.7392H7.89458V10.244ZM7.89458 5.2344H10.4473V2.72961H7.89458V5.2344ZM13 20.2632H23.2108V7.7392H13V10.244H15.5527V12.7488H13V15.2536H15.5527V17.7584H13V20.2632ZM18.1054 12.7488V10.244H20.6581V12.7488H18.1054ZM18.1054 17.7584V15.2536H20.6581V17.7584H18.1054Z"
+                  fill="#E60012"
+                />
+              </svg>
+            </span>
+            <h2 class="content-header__title">メーカー</h2>
+          </div>
+          <div class="content-header__right">
+            <span class="content-header__selected">アウディ</span>
+            <span class="content-header__check">
+              <svg
+                width="28"
+                height="22"
+                viewBox="0 0 28 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.33333 22L0 12.6383L3.26667 9.3617L9.33333 15.4468L24.7333 0L28 3.2766L9.33333 22Z"
+                  fill="#E60012"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <!-- Quick Access Section -->
+        <section class="quick-access">
+          <h3 class="section-title">クイックアクセス</h3>
+          <div class="quick-access__grid">
+            <button class="manufacturer-btn">ダイハツ</button>
+            <button class="manufacturer-btn">トヨタ</button>
+            <button class="manufacturer-btn">日産</button>
+            <button class="manufacturer-btn">ホンダ</button>
+            <button class="manufacturer-btn">マツダ</button>
+            <button class="manufacturer-btn">レクサス</button>
+          </div>
+        </section>
+
+        <!-- Divider -->
+        <div class="divider">
+          <span class="divider__text">国から選択</span>
+        </div>
+
+        <!-- Country Tabs -->
+        <div class="country-tabs">
+          <button class="country-tab">
+            <span class="country-tab__flag">
+              <svg
+                width="28"
+                height="19"
+                viewBox="0 0 28 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M26.5527 0.5V18.5H0.5V0.5H26.5527Z"
+                  fill="white"
+                  stroke="#CCCCCC"
+                />
+                <path d="M1 18H26.0526V1H1V18Z" fill="white" />
+                <path
+                  d="M18.5385 9.49982C18.5385 6.68284 16.2968 4.40146 13.5288 4.40146C10.7608 4.40146 8.5191 6.68284 8.5191 9.49982C8.5191 12.3168 10.7608 14.5982 13.5288 14.5982C16.2968 14.5982 18.5385 12.3168 18.5385 9.49982Z"
+                  fill="#E60012"
+                />
+              </svg>
+            </span>
+            日本
+          </button>
+          <button class="country-tab country-tab--active">
+            <span class="country-tab__flag">
+              <svg
+                width="28"
+                height="19"
+                viewBox="0 0 28 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M26.9961 0.5V18.4971H0.5V0.5H26.9961Z"
+                  fill="#424242"
+                  stroke="#CCCCCC"
+                />
+                <path d="M1 1H26.4959V6.66667H1V1Z" fill="#424242" />
+                <path
+                  d="M1 12.3335H26.4959V6.66678H1V12.3335Z"
+                  fill="#E60012"
+                />
+                <path
+                  d="M1 12.3332H26.4959V17.9999H1V12.3332Z"
+                  fill="#FEDC36"
+                />
+              </svg>
+            </span>
+            ドイツ
+          </button>
+          <button class="country-tab">
+            <span class="country-tab__flag">
+              <svg
+                width="28"
+                height="19"
+                viewBox="0 0 28 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27 0.5V18.5H0.5V0.5H27Z"
+                  fill="white"
+                  stroke="#CCCCCC"
+                />
+                <path d="M26.5022 18V1H18.0001V18H26.5022Z" fill="#E60012" />
+                <path d="M9.50165 18V1H17.9996V18H9.50165Z" fill="white" />
+                <path d="M9.50205 18V1H1V18H9.50205Z" fill="#257534" />
+              </svg>
+            </span>
+            イタリア
+          </button>
+          <button class="country-tab">
+            <span class="country-tab__flag">
+              <svg
+                width="28"
+                height="19"
+                viewBox="0 0 28 19"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M27 0.5V18.5H0.5V0.5H27Z"
+                  fill="white"
+                  stroke="#CCCCCC"
+                />
+                <path
+                  d="M26.4959 2.30807V3.6164H13.9197V2.30807H26.4959ZM26.4959 4.92063V6.22895H13.9197V4.92063H26.4959ZM26.4959 7.53727V8.84559H13.9197V7.53727H26.4959ZM26.4959 10.1539V11.4622H1V10.1539H26.4959ZM26.4959 12.7665V14.0748H1V12.7665H26.4959ZM26.4959 15.3831V16.6914H1V15.3831H26.4959Z"
+                  fill="white"
+                />
+                <path
+                  d="M1 1H26.4959V2.30832H1V1ZM1 16.6917H26.4959V18H1V16.6917ZM1 14.075H26.4959V15.3834H1V14.075ZM1 11.4584H26.4959V12.7667H1V11.4584ZM1 8.84584H26.4959V10.1542H1V8.84584ZM1 6.2292H26.4959V7.53752H1V6.2292ZM1 3.61664H26.4959V4.92496H1V3.61664Z"
+                  fill="#E60012"
+                />
+                <path d="M1 1H13.9197V10.1542H1V1Z" fill="#1760BD" />
+                <path
+                  d="M12.8385 1.45389L12.957 1.81776H13.3373L13.0306 2.03854L13.1492 2.39833L12.8426 2.17346L12.5359 2.39833L12.6545 2.03854L12.3438 1.81368H12.724L12.8426 1.4498L12.8385 1.45389ZM2.07345 5.10083L2.19201 5.46471H2.57224L2.2656 5.68549L2.38417 6.04937L2.07753 5.8245L1.7709 6.04937L1.88946 5.68549L1.58282 5.46062H1.96306L2.08162 5.09674L2.07345 5.10083ZM3.15281 6.01666L3.27138 6.38053H3.65161L3.34497 6.60131L3.46354 6.9611L3.1569 6.73623L2.85026 6.9611L2.96883 6.60131L2.66219 6.37645H3.04242L3.16099 6.01257L3.15281 6.01666ZM11.7632 6.01666L11.8818 6.38053H12.262L11.9554 6.60131L12.0739 6.9611L11.7673 6.73623L11.4606 6.9611L11.5792 6.60131L11.2726 6.37645H11.6528L11.7714 6.01257L11.7632 6.01666ZM9.61265 6.01666L9.73121 6.38053H10.1114L9.80481 6.60131L9.92337 6.9611L9.61673 6.73623L9.3101 6.9611L9.42866 6.60131L9.12203 6.37645H9.50226L9.62082 6.01257L9.61265 6.01666ZM7.458 6.01666L7.57657 6.38053H7.9568L7.65016 6.60131L7.76873 6.9611L7.46209 6.73623L7.15546 6.9611L7.27402 6.60131L6.9633 6.37645H7.34353L7.46209 6.01257L7.458 6.01666ZM5.30336 6.01666L5.42193 6.38053H5.80216L5.49552 6.60131L5.61409 6.9611L5.30745 6.73623L5.00081 6.9611L5.11938 6.60131L4.81274 6.37645H5.19297L5.31154 6.01257L5.30336 6.01666ZM4.22809 5.10083L4.34665 5.46471H4.72688L4.42025 5.68549L4.53881 6.04937L4.23218 5.8245L3.92554 6.04937L4.0441 5.68549L3.73338 5.46062H4.11361L4.23218 5.09674L4.22809 5.10083ZM10.6879 5.10083L10.8065 5.46471H11.1867L10.8801 5.68549L10.9986 6.04937L10.692 5.8245L10.3854 6.04937L10.5039 5.68549L10.1932 5.46062H10.5734L10.692 5.09674L10.6879 5.10083ZM12.8385 5.10083L12.957 5.46471H13.3373L13.0306 5.68549L13.1492 6.04937L12.8426 5.8245L12.5359 6.04937L12.6545 5.68549L12.3438 5.46062H12.724L12.8426 5.09674L12.8385 5.10083ZM12.8385 6.92839L12.957 7.28818H13.3373L13.0306 7.50896L13.1492 7.87284L12.8426 7.64797L12.5359 7.87284L12.6545 7.50896L12.3438 7.28409H12.724L12.8426 6.9243L12.8385 6.92839ZM10.6879 6.92839L10.8065 7.28818H11.1867L10.8801 7.50896L10.9986 7.87284L10.692 7.64797L10.3854 7.87284L10.5039 7.50896L10.1932 7.28409H10.5734L10.692 6.9243L10.6879 6.92839ZM4.22809 6.92839L4.34665 7.28818H4.72688L4.42025 7.50896L4.53881 7.87284L4.23218 7.64797L3.92554 7.87284L4.0441 7.50896L3.73338 7.28409H4.11361L4.23218 6.9243L4.22809 6.92839ZM3.15281 7.84013L3.27138 8.20401H3.65161L3.34497 8.42479L3.46354 8.78866L3.1569 8.5638L2.85026 8.78866L2.96883 8.42479L2.66219 8.19992H3.04242L3.16099 7.84013H3.15281ZM11.7632 7.84013L11.8818 8.20401H12.262L11.9554 8.42479L12.0739 8.78866L11.7673 8.5638L11.4606 8.78866L11.5792 8.42479L11.2726 8.19992H11.6528L11.7714 7.84013H11.7632ZM9.61265 7.84013L9.73121 8.20401H10.1114L9.80481 8.42479L9.92337 8.78866L9.61673 8.5638L9.3101 8.78866L9.42866 8.42479L9.12203 8.19992H9.50226L9.62082 7.84013H9.61265ZM7.458 7.84013L7.57657 8.20401H7.9568L7.65016 8.42479L7.76873 8.78866L7.46209 8.5638L7.15546 8.78866L7.27402 8.42479L6.9633 8.19992H7.34353L7.46209 7.84013H7.458ZM5.30336 7.84013L5.42193 8.20401H5.80216L5.49552 8.42479L5.61409 8.78866L5.30745 8.5638L5.00081 8.78866L5.11938 8.42479L4.81274 8.19992H5.19297L5.31154 7.84013H5.30336ZM2.07345 6.92839L2.19201 7.28818H2.57224L2.2656 7.50896L2.38417 7.87284L2.07753 7.64797L1.7709 7.87284L1.88946 7.50896L1.58282 7.28409H1.96306L2.08162 6.9243L2.07345 6.92839ZM2.07345 8.75187L2.19201 9.11574H2.57224L2.2656 9.33652L2.38417 9.7004L2.07753 9.47553L1.7709 9.7004L1.88946 9.33652L1.58282 9.11165H1.96306L2.08162 8.75187H2.07345ZM4.22809 8.75187L4.34665 9.11574H4.72688L4.42025 9.33652L4.53881 9.7004L4.23218 9.47553L3.92554 9.7004L4.0441 9.33652L3.73338 9.11165H4.11361L4.23218 8.75187H4.22809ZM10.6879 8.75187L10.8065 9.11574H11.1867L10.8801 9.33652L10.9986 9.7004L10.692 9.47553L10.3854 9.7004L10.5039 9.33652L10.1932 9.11165H10.5734L10.692 8.75187H10.6879ZM12.8385 8.75187L12.957 9.11574H13.3373L13.0306 9.33652L13.1492 9.7004L12.8426 9.47553L12.5359 9.7004L12.6545 9.33652L12.3438 9.11165H12.724L12.8426 8.75187H12.8385ZM3.15281 4.1891L3.27138 4.55297H3.65161L3.34497 4.77375L3.46354 5.13763L3.1569 4.91276L2.85026 5.13763L2.96883 4.77375L2.66219 4.54888H3.04242L3.16099 4.18501L3.15281 4.1891ZM3.15281 2.36562L3.27138 2.7295H3.65161L3.34497 2.95437L3.46354 3.31416L3.1569 3.08929L2.85026 3.31416L2.96883 2.95437L2.66219 2.7295H3.04242L3.16099 2.36971L3.15281 2.36562ZM11.7632 2.36562L11.8818 2.7295H12.262L11.9554 2.95437L12.0739 3.31416L11.7673 3.08929L11.4606 3.31416L11.5792 2.95437L11.2726 2.7295H11.6528L11.7714 2.36971L11.7632 2.36562ZM9.61265 2.36562L9.73121 2.7295H10.1114L9.80481 2.95437L9.92337 3.31416L9.61673 3.08929L9.3101 3.31416L9.42866 2.95437L9.12203 2.7295H9.50226L9.62082 2.36971L9.61265 2.36562ZM7.458 2.36562L7.57657 2.7295H7.9568L7.65016 2.95437L7.76873 3.31416L7.46209 3.08929L7.15546 3.31416L7.27402 2.95437L6.9633 2.7295H7.34353L7.46209 2.36971L7.458 2.36562ZM5.30336 2.36562L5.42193 2.7295H5.80216L5.49552 2.95437L5.61409 3.31416L5.30745 3.08929L5.00081 3.31416L5.11938 2.95437L4.81274 2.7295H5.19297L5.31154 2.36971L5.30336 2.36562ZM2.07345 3.27736L2.19201 3.64124H2.57224L2.2656 3.86202L2.38417 4.22589L2.07753 4.00102L1.7709 4.22589L1.88946 3.86202L1.58282 3.63715H1.96306L2.08162 3.27327L2.07345 3.27736ZM11.7632 4.1891L11.8818 4.55297H12.262L11.9554 4.77375L12.0739 5.13763L11.7673 4.91276L11.4606 5.13763L11.5792 4.77375L11.2726 4.54888H11.6528L11.7714 4.18501L11.7632 4.1891ZM9.61265 4.1891L9.73121 4.55297H10.1114L9.80481 4.77375L9.92337 5.13763L9.61673 4.91276L9.3101 5.13763L9.42866 4.77375L9.12203 4.54888H9.50226L9.62082 4.18501L9.61265 4.1891ZM7.458 4.1891L7.57657 4.55297H7.9568L7.65016 4.77375L7.76873 5.13763L7.46209 4.91276L7.15546 5.13763L7.27402 4.77375L6.9633 4.54888H7.34353L7.46209 4.18501L7.458 4.1891ZM5.30336 4.1891L5.42193 4.55297H5.80216L5.49552 4.77375L5.61409 5.13763L5.30745 4.91276L5.00081 5.13763L5.11938 4.77375L4.81274 4.54888H5.19297L5.31154 4.18501L5.30336 4.1891ZM4.22809 3.27736L4.34665 3.64124H4.72688L4.42025 3.86202L4.53881 4.22589L4.23218 4.00102L3.92554 4.22589L4.0441 3.86202L3.73338 3.63715H4.11361L4.23218 3.27327L4.22809 3.27736ZM4.22809 1.45389L4.34665 1.81776H4.72688L4.42025 2.03854L4.53881 2.39833L4.23218 2.17346L3.92554 2.39833L4.0441 2.03854L3.73338 1.81368H4.11361L4.23218 1.4498L4.22809 1.45389ZM2.07345 1.45389L2.19201 1.81776H2.57224L2.2656 2.03854L2.38417 2.39833L2.07753 2.17346L1.7709 2.39833L1.88946 2.03854L1.58282 1.81368H1.96306L2.08162 1.4498L2.07345 1.45389ZM6.38273 8.75187L6.50129 9.11574H6.88153L6.57489 9.33652L6.69345 9.7004L6.38682 9.47553L6.08018 9.7004L6.19875 9.33652L5.89211 9.11165H6.27234L6.3909 8.75187H6.38273ZM6.38273 6.92839L6.50129 7.28818H6.88153L6.57489 7.50896L6.69345 7.87284L6.38682 7.64797L6.08018 7.87284L6.19875 7.50896L5.89211 7.28409H6.27234L6.3909 6.9243L6.38273 6.92839ZM6.38273 5.10083L6.50129 5.46471H6.88153L6.57489 5.68549L6.69345 6.04937L6.38682 5.8245L6.08018 6.04937L6.19875 5.68549L5.89211 5.46062H6.27234L6.3909 5.09674L6.38273 5.10083ZM6.38273 3.27736L6.50129 3.64124H6.88153L6.57489 3.86202L6.69345 4.22589L6.38682 4.00102L6.08018 4.22589L6.19875 3.86202L5.89211 3.63715H6.27234L6.3909 3.27327L6.38273 3.27736ZM6.38273 1.45389L6.50129 1.81776H6.88153L6.57489 2.03854L6.69345 2.39833L6.38682 2.17346L6.08018 2.39833L6.19875 2.03854L5.89211 1.81368H6.27234L6.3909 1.4498L6.38273 1.45389ZM8.53328 8.75187L8.65185 9.11574H9.03208L8.72135 9.33652L8.83992 9.7004L8.53328 9.47553L8.22664 9.7004L8.34521 9.33652L8.03857 9.11165H8.4188L8.53328 8.75187ZM8.53328 6.92839L8.65185 7.28818H9.03208L8.72135 7.50896L8.83992 7.87284L8.53328 7.64797L8.22664 7.87284L8.34521 7.50896L8.03857 7.28409H8.4188L8.53328 6.9243V6.92839ZM8.53328 5.10083L8.65185 5.46471H9.03208L8.72135 5.68549L8.83992 6.04937L8.53328 5.8245L8.22664 6.04937L8.34521 5.68549L8.03857 5.46062H8.4188L8.53328 5.09674V5.10083ZM8.53328 3.27736L8.65185 3.64124H9.03208L8.72135 3.86202L8.83992 4.22589L8.53328 4.00102L8.22664 4.22589L8.34521 3.86202L8.03857 3.63715H8.4188L8.53328 3.27327V3.27736ZM8.53328 1.45389L8.65185 1.81776H9.03208L8.72135 2.03854L8.83992 2.39833L8.53328 2.17346L8.22664 2.39833L8.34521 2.03854L8.03857 1.81368H8.4188L8.53328 1.4498V1.45389ZM10.6879 3.27736L10.8065 3.64124H11.1867L10.8801 3.86202L10.9986 4.22589L10.692 4.00102L10.3854 4.22589L10.5039 3.86202L10.1932 3.63715H10.5734L10.692 3.27327L10.6879 3.27736ZM10.6879 1.45389L10.8065 1.81776H11.1867L10.8801 2.03854L10.9986 2.39833L10.692 2.17346L10.3854 2.39833L10.5039 2.03854L10.1932 1.81368H10.5734L10.692 1.4498L10.6879 1.45389ZM12.8385 3.27736L12.957 3.64124H13.3373L13.0306 3.86202L13.1492 4.22589L12.8426 4.00102L12.5359 4.22589L12.6545 3.86202L12.3438 3.63715H12.724L12.8426 3.27327L12.8385 3.27736Z"
+                  fill="white"
+                />
+              </svg>
+            </span>
+            アメリカ
+          </button>
+          <button class="country-tab">
+            <span class="country-tab__flag">
+              <svg
+                width="26"
+                height="18"
+                viewBox="0 0 26 18"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M25.5 0.5V17.5H0.5V0.5H25.5Z"
+                  fill="white"
+                  stroke="#CCCCCC"
+                />
+                <path
+                  d="M3.97066 1H11.0202V5.69841L3.97066 1ZM14.9798 1H22.0293L14.9798 5.69841V1ZM24.9962 2.97787V6.35642H19.9283L24.9962 2.97787ZM24.9962 11.6397V15.0183L19.9283 11.6397H24.9962ZM22.0293 16.9962H14.9798V12.2977L22.0293 16.9962ZM11.0164 16.9962H3.97066L11.0202 12.2977V16.9962H11.0164ZM1 15.0183V11.6397H6.06397L1 15.0183ZM1 6.35642V2.97787L6.06397 6.35642H1Z"
+                  fill="#1760BD"
+                />
+                <path
+                  d="M24.9962 15.0183L19.9322 11.6397H24.9962V6.35642H19.9322L24.9962 2.97787V1H22.0293L14.9798 5.69841V1H12.9981H11.0164V5.69841L3.97066 1H1V2.97787L6.06397 6.35642H1V11.6397H6.06397L1 15.0183V16.9962H3.97066L11.0164 12.2977V16.9962H12.9981H14.9798V12.2977L22.0293 16.9962H24.9962V15.0183Z"
+                  fill="white"
+                />
+                <path
+                  d="M14.2371 1V7.34921H24.9962V10.6508H14.2371V17H11.7629V10.6508H1V7.34921H11.7629V1H14.2371ZM24.9962 16.2573L18.0736 11.6436H15.8456L23.8802 17H24.9923V16.2573H24.9962ZM18.0774 6.35642L24.9962 1.74266V1H23.8841L15.8494 6.35642H18.0774ZM10.1467 6.35642L2.11207 1H1V1.74266L7.92256 6.35642H10.1506H10.1467ZM7.92256 11.6397L1 16.2573V17H2.11207L10.1467 11.6436H7.91871L7.92256 11.6397Z"
+                  fill="#E60012"
+                />
+              </svg>
+            </span>
+            イギリス
+          </button>
+        </div>
+
+        <!-- Manufacturer List -->
+        <section class="manufacturer-list">
+          <div class="manufacturer-list__grid">
+            <button class="manufacturer-btn manufacturer-btn--selected">
+              アウディ
+            </button>
+            <button class="manufacturer-btn">BMW</button>
+            <button class="manufacturer-btn">BMWアルピナ</button>
+            <button class="manufacturer-btn">メルセデス・ベンツ</button>
+            <button class="manufacturer-btn">AMG</button>
+            <button class="manufacturer-btn">メルセデスAMG</button>
+            <button class="manufacturer-btn">フォルクスワーゲン</button>
+            <button class="manufacturer-btn">オペラ</button>
+            <button class="manufacturer-btn">ポルシェ</button>
+            <button class="manufacturer-btn">スマート</button>
+            <button class="manufacturer-btn">マイバッハ</button>
+            <button class="manufacturer-btn">メルセデスマイバッハ</button>
+            <button class="manufacturer-btn">ヨーロッパフォード</button>
+          </div>
+        </section>
+      </main>
+
+      <!-- Main Content 2 -->
+      <main class="main-content" id="drive">
+        <!-- Title Section -->
+        <div class="content-header">
+          <div class="content-header__left">
+            <span class="content-header__icon">
+              <svg
+                width="29"
+                height="21"
+                viewBox="0 0 29 21"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M2.85794 16.805H7.79266C7.45809 16.4636 7.14609 16.0968 6.85667 15.7046C6.56726 15.3123 6.31278 14.8905 6.09325 14.4393H2.85794V16.805ZM14.5 16.805C16.295 16.805 17.8214 16.1917 19.0793 14.9652C20.3372 13.7387 20.9661 12.2503 20.9661 10.5C20.9661 8.74974 20.3372 7.26134 19.0793 6.03482C17.8214 4.80829 16.295 4.19503 14.5 4.19503C12.705 4.19503 11.1786 4.80829 9.92071 6.03482C8.66284 7.26134 8.03391 8.74974 8.03391 10.5C8.03391 12.2503 8.66284 13.7387 9.92071 14.9652C11.1786 16.1917 12.705 16.805 14.5 16.805ZM22.9068 6.56065H26.1421V4.19503H21.2073C21.5419 4.53636 21.8539 4.90317 22.1433 5.29544C22.4327 5.68772 22.6872 6.10946 22.9068 6.56065ZM0 21V10.2443H2.85794V11.6526H5.25725C5.2194 11.4581 5.19639 11.2699 5.18822 11.0881C5.18005 10.9065 5.17597 10.7105 5.17597 10.5C5.17597 7.96728 6.08067 5.81887 7.89006 4.05477C9.69924 2.29046 11.9026 1.4083 14.5 1.4083H26.1421V0H29V10.7557H26.1421V9.34738H23.7428C23.7806 9.54195 23.8036 9.73012 23.8118 9.9119C23.8199 10.0935 23.824 10.2895 23.824 10.5C23.824 13.0327 22.9193 15.1811 21.1099 16.9452C19.3008 18.7095 17.0974 19.5917 14.5 19.5917H2.85794V21H0ZM14.5006 14.3717C13.77 14.3717 13.1444 14.118 12.6238 13.6107C12.1031 13.1031 11.8427 12.4931 11.8427 11.7806C11.8427 11.2984 11.95 10.8126 12.1646 10.3233C12.3791 9.8339 12.7844 9.13646 13.3802 8.23093L14.5 6.62072L15.6198 8.23093C16.2156 9.13646 16.6209 9.8339 16.8354 10.3233C17.05 10.8126 17.1573 11.2984 17.1573 11.7806C17.1573 12.4931 16.8973 13.1031 16.3771 13.6107C15.8568 14.118 15.2313 14.3717 14.5006 14.3717Z"
+                  fill="#E60012"
+                />
+              </svg>
+            </span>
+            <h2 class="content-header__title">駆動</h2>
+          </div>
+          <div class="content-header__right">
+            <span class="content-header__selected">MR</span>
+            <span class="content-header__check">
+              <svg
+                width="28"
+                height="22"
+                viewBox="0 0 28 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.33333 22L0 12.6383L3.26667 9.3617L9.33333 15.4468L24.7333 0L28 3.2766L9.33333 22Z"
+                  fill="#E60012"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <section class="drive-selection">
+          <div class="drive-selection__grid">
+            <button class="drive-card" data-type="FF">
+              <div class="drive-card__icon">
+                <svg
+                  width="58"
+                  height="95"
+                  viewBox="0 0 58 95"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="4" width="50" height="95" rx="6" fill="#CCCCCC" />
+                  <rect y="10" width="15" height="24" rx="3" fill="#E60012" />
+                  <rect
+                    x="19"
+                    y="6"
+                    width="19"
+                    height="18"
+                    rx="3"
+                    fill="#E60012"
+                  />
+                  <rect
+                    x="43"
+                    y="10"
+                    width="15"
+                    height="24"
+                    rx="3"
+                    fill="#E60012"
+                  />
+                  <line
+                    x1="8"
+                    y1="20"
+                    x2="50"
+                    y2="20"
+                    stroke="#E60012"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+              <span class="drive-card__label">FF</span>
+            </button>
+
+            <!-- 2 -->
+            <button class="drive-card" data-type="FR">
+              <div class="drive-card__icon">
+                <svg
+                  width="58"
+                  height="95"
+                  viewBox="0 0 58 95"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="4" width="50" height="95" rx="6" fill="#CCCCCC" />
+                  <rect y="60" width="15" height="24" rx="3" fill="#E60012" />
+                  <rect
+                    x="19"
+                    y="6"
+                    width="19"
+                    height="18"
+                    rx="3"
+                    fill="#E60012"
+                  />
+                  <rect
+                    x="43"
+                    y="60"
+                    width="15"
+                    height="24"
+                    rx="3"
+                    fill="#E60012"
+                  />
+                  <line
+                    x1="28.5"
+                    y1="15"
+                    x2="28.5"
+                    y2="72"
+                    stroke="#E60012"
+                    stroke-width="3"
+                  />
+                  <line
+                    x1="43"
+                    y1="72.5"
+                    x2="15"
+                    y2="72.5"
+                    stroke="#E60012"
+                    stroke-width="3"
+                  />
+                </svg>
+              </div>
+              <span class="drive-card__label">FR</span>
+            </button>
+
+            <!-- 3 -->
+            <button class="drive-card" data-type="RR">
+              <div class="drive-card__icon">
+                <svg
+                  width="58"
+                  height="95"
+                  viewBox="0 0 58 95"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="54"
+                    y="95"
+                    width="50"
+                    height="95"
+                    rx="6"
+                    transform="rotate(180 54 95)"
+                    fill="#CCCCCC"
+                  />
+                  <rect
+                    x="58"
+                    y="85"
+                    width="15"
+                    height="24"
+                    rx="3"
+                    transform="rotate(180 58 85)"
+                    fill="#E60012"
+                  />
+                  <rect
+                    x="39"
+                    y="89"
+                    width="19"
+                    height="18"
+                    rx="3"
+                    transform="rotate(180 39 89)"
+                    fill="#E60012"
+                  />
+                  <rect
+                    x="15"
+                    y="85"
+                    width="15"
+                    height="24"
+                    rx="3"
+                    transform="rotate(180 15 85)"
+                    fill="#E60012"
+                  />
+                  <line
+                    x1="50"
+                    y1="75"
+                    x2="8"
+                    y2="75"
+                    stroke="#E60012"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+              <span class="drive-card__label">RR</span>
+            </button>
+
+            <!-- 4 -->
+            <button class="drive-card drive-card--selected" data-type="MR">
+              <div class="drive-card__icon">
+                <svg
+                  width="58"
+                  height="95"
+                  viewBox="0 0 58 95"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect
+                    x="54"
+                    y="95"
+                    width="50"
+                    height="95"
+                    rx="6"
+                    transform="rotate(180 54 95)"
+                    fill="#CCCCCC"
+                  />
+                  <rect
+                    x="58"
+                    y="85"
+                    width="15"
+                    height="24"
+                    rx="3"
+                    transform="rotate(180 58 85)"
+                    fill="#E60012"
+                  />
+                  <rect
+                    x="39"
+                    y="79"
+                    width="19"
+                    height="23"
+                    rx="3"
+                    transform="rotate(180 39 79)"
+                    fill="#E60012"
+                  />
+                  <rect
+                    x="15"
+                    y="85"
+                    width="15"
+                    height="24"
+                    rx="3"
+                    transform="rotate(180 15 85)"
+                    fill="#E60012"
+                  />
+                  <line
+                    x1="50"
+                    y1="75"
+                    x2="8"
+                    y2="75"
+                    stroke="#E60012"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+              <span class="drive-card__label">MR</span>
+            </button>
+
+            <!-- 5 -->
+            <button class="drive-card" data-type="4WD">
+              <div class="drive-card__icon">
+                <svg
+                  width="58"
+                  height="95"
+                  viewBox="0 0 58 95"
+                  fill="none"
+                  xmlns="http://www.w3.org/2000/svg"
+                >
+                  <rect x="4" width="50" height="95" rx="6" fill="#CCCCCC" />
+                  <rect y="60" width="15" height="24" rx="3" fill="#E60012" />
+                  <rect
+                    x="43"
+                    y="60"
+                    width="15"
+                    height="24"
+                    rx="3"
+                    fill="#E60012"
+                  />
+                  <line
+                    x1="28.5"
+                    y1="15"
+                    x2="28.5"
+                    y2="72"
+                    stroke="#E60012"
+                    stroke-width="3"
+                  />
+                  <line
+                    x1="43"
+                    y1="72.5"
+                    x2="15"
+                    y2="72.5"
+                    stroke="#E60012"
+                    stroke-width="3"
+                  />
+                  <rect y="10" width="15" height="24" rx="3" fill="#E60012" />
+                  <rect
+                    x="19"
+                    y="6"
+                    width="19"
+                    height="18"
+                    rx="3"
+                    fill="#E60012"
+                  />
+                  <rect
+                    x="43"
+                    y="10"
+                    width="15"
+                    height="24"
+                    rx="3"
+                    fill="#E60012"
+                  />
+                  <line
+                    x1="8"
+                    y1="20"
+                    x2="50"
+                    y2="20"
+                    stroke="#E60012"
+                    stroke-width="2"
+                  />
+                </svg>
+              </div>
+              <span class="drive-card__label">4WD</span>
+            </button>
+          </div>
+        </section>
+      </main>
+
+      <!-- Main Content 3 -->
+      <main class="main-content" id="distance">
+        <!-- Title Section -->
+        <div class="content-header">
+          <div class="content-header__left">
+            <span class="content-header__icon">
+              <svg
+                width="26"
+                height="12"
+                viewBox="0 0 26 12"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M6.5 12L0 6L6.5 0L8.32 1.68L4.9725 4.8H21.0275L17.68 1.68L19.5 0L26 6L19.5 12L17.68 10.32L21.0275 7.2H4.9725L8.32 10.32L6.5 12Z"
+                  fill="#E60012"
+                />
+              </svg>
+            </span>
+            <h2 class="content-header__title">走行距離</h2>
+          </div>
+          <div class="content-header__right">
+            <span class="content-header__selected">70.1万km</span>
+            <span class="content-header__check">
+              <svg
+                width="28"
+                height="22"
+                viewBox="0 0 28 22"
+                fill="none"
+                xmlns="http://www.w3.org/2000/svg"
+              >
+                <path
+                  d="M9.33333 22L0 12.6383L3.26667 9.3617L9.33333 15.4468L24.7333 0L28 3.2766L9.33333 22Z"
+                  fill="#E60012"
+                />
+              </svg>
+            </span>
+          </div>
+        </div>
+
+        <section class="distance-bar">
+          <div class="distance-input-container">
+            <input type="text" class="distance-input" value="70.1" readonly />
+            <span class="distance-unit">万km</span>
+          </div>
+
+          <div class="slider-container">
+            <div class="slider-track">
+              <div class="slider-fill" style="width: 10%"></div>
+              <input
+                type="range"
+                class="slider"
+                min="0"
+                max="900"
+                value="70.1"
+                step="0.1"
+              />
+            </div>
+          </div>
+
+          <button class="btn btn--red btn--confirm">決定する</button>
+        </section>
+      </main>
+    </div>
+
+    <script>
+      // Sidebar navigation active state
+      document.addEventListener("DOMContentLoaded", function () {
+        const navItems = document.querySelectorAll(".nav-item");
+
+        navItems.forEach((item) => {
+          item.addEventListener("click", function (e) {
+            e.preventDefault();
+
+            // Remove active class from all nav items
+            navItems.forEach((navItem) => {
+              navItem.classList.remove("nav-item--active");
+            });
+
+            // Add active class to clicked item
+            this.classList.add("nav-item--active");
+          });
+        });
+      });
+    </script>
+  </body>
+</html>

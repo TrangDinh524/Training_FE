@@ -1,0 +1,175 @@
+@use "variable" as *;
+
+// Flex center
+@mixin flex-center {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+// Flex between
+@mixin flex-between {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+// Header base styles
+@mixin header-base {
+  position: sticky;
+  height: $header-height;
+  width: 100%;
+  left: 0;
+  top: 0;
+  background: $color-white;
+  box-shadow: 0px 4px 8px 3px rgba(0, 0, 0, 0.15),
+    0px 1px 3px rgba(0, 0, 0, 0.3);
+  z-index: 1000;
+  padding: 1.2rem 2.4rem;
+}
+
+// Header content layout
+@mixin header-content {
+  width: 100%;
+  height: 100%;
+  @include flex-between;
+  padding: 0 2.4rem;
+}
+
+// Header title styles
+@mixin header-title {
+  color: $color-primary;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
+  font-family: $font-family-primary;
+}
+
+// Header actions container
+@mixin header-actions {
+  @include flex-center;
+  gap: 1.2rem;
+}
+
+// Sidebar base styles
+@mixin sidebar-base {
+  position: fixed;
+  top: $header-height;
+  left: 0;
+  width: $sidebar-width;
+  height: calc(100vh - #{$header-height});
+  background-color: $color-white;
+  border-right: 1px solid $color-gray-light;
+  // z-index: 999;
+  overflow-y: auto;
+}
+
+// Nav item base styles
+@mixin nav-item-base {
+  padding: 1.2rem 1.6rem;
+  cursor: pointer;
+  transition: $transition-default;
+  border-left: 3px solid transparent;
+  height: fit-content;
+}
+
+// Nav item hover effect
+@mixin nav-item-hover {
+  &:hover {
+    background-color: $color-background-light;
+  }
+}
+
+// Nav item active state
+@mixin nav-item-active {
+  background-color: $color-primary;
+  color: $color-white;
+  border-left-color: $color-primary-hover;
+
+  .nav-item__subtitle {
+    color: $color-white;
+  }
+}
+
+// Main content base styles
+@mixin main-content-base {
+  margin: 3rem 3rem 2rem 25rem;
+  padding: $spacing-xxl;
+  box-shadow: $box-shadow;
+  border-radius: 6px;
+  margin-bottom: 2.4rem;
+  // min-height: calc(100vh - #{$header-height});
+}
+
+// Content header layout
+@mixin content-header-layout {
+  @include flex-between;
+  margin-bottom: $spacing-xl;
+}
+
+// Content header left section
+@mixin content-header-left {
+  @include flex-center;
+  gap: $spacing-sm;
+}
+
+// Content header right section
+@mixin content-header-right {
+  @include flex-center;
+  gap: $spacing-sm;
+}
+
+// Content header title styles
+@mixin content-header-title {
+  color: $color-primary;
+  font-size: $font-size-large;
+  font-weight: $font-weight-bold;
+  font-family: $font-family-primary;
+}
+
+// Content header selected text
+@mixin content-header-selected {
+  color: $color-primary;
+  font-size: $font-size-large;
+  font-weight: $font-weight-bold;
+  font-family: $font-family-primary;
+}
+
+// Section title styles
+@mixin section-title {
+  color: $color-primary;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-bold;
+  font-family: $font-family-primary;
+  margin-bottom: $spacing-md;
+}
+
+// Grid layout for quick access
+@mixin quick-access-grid {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: $spacing-md;
+}
+
+// Manufacturer button base styles
+@mixin manufacturer-btn-base {
+  box-sizing: border-box;
+  padding: $spacing-sm $spacing-md;
+  background-color: $color-white;
+  border: 1px solid $color-gray-light;
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  font-weight: $font-weight-bold;
+  color: $color-black;
+  cursor: pointer;
+  transition: $transition-default;
+  min-height: 4rem;
+  @include flex-center;
+  text-align: center;
+  box-shadow: $box-shadow;
+  border-radius: 4px;
+
+  &:hover {
+    border-color: $color-primary;
+    background-color: $color-background-light;
+  }
+}

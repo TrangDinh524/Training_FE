@@ -1,0 +1,33 @@
+// =============================================================================
+// BASE STYLES
+// =============================================================================
+
+@use "variable" as *;
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 10px;
+}
+
+body {
+  font-family: $font-family-primary;
+  font-size: $font-size-base;
+  line-height: 1.5;
+  color: $color-black;
+  background-color: $color-white;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  font-weight: $font-weight-medium;
+  line-height: 1.2;
+}

@@ -1,0 +1,306 @@
+// =============================================================================
+// COMPONENTS - All other components
+// =============================================================================
+
+// Quick Access Section (single-use)
+@use "variable" as *;
+@use "mixins" as *;
+
+.quick-access {
+  background-color: #feedee;
+  padding: $spacing-xl;
+  border-radius: $border-radius-sm;
+  margin-bottom: $spacing-xl;
+
+  &__grid {
+    @include quick-access-grid;
+  }
+}
+
+.section-title {
+  @include section-title;
+}
+
+.manufacturer-btn {
+  @include manufacturer-btn-base;
+}
+
+// Divider
+.divider {
+  position: relative;
+  text-align: center;
+  margin: $spacing-xl 0;
+
+  &::before {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 0;
+    right: 0;
+    height: 1px;
+    background-color: $color-primary;
+  }
+
+  &__text {
+    color: $color-primary;
+    background-color: $color-white;
+    padding: 0 $spacing-md;
+    font-size: $font-size-medium;
+    position: relative;
+    z-index: 1;
+    font-weight: $font-weight-bold;
+    margin-left: 3rem;
+  }
+}
+
+// Country Tabs
+.country-tabs {
+  display: flex;
+  border-bottom: 1px solid $color-gray-medium;
+  gap: $spacing-xs;
+}
+
+.country-tab {
+  @include flex-center;
+  width: 20%;
+  gap: $spacing-xs;
+  padding: $spacing-sm $spacing-md;
+  background-color: $color-gray-medium;
+  color: $color-white;
+  border: none;
+  border-radius: $border-radius-sm $border-radius-sm 0 0;
+  font-family: $font-family-primary;
+  font-size: 13px;
+  cursor: pointer;
+  transition: $transition-default;
+  border-radius: 6px 6px 0 0;
+
+  &:hover {
+    // background-color: $color-gray-hover;
+  }
+
+  &__flag {
+    height: 17px;
+  }
+
+  &--active {
+    background-color: $color-white;
+    color: $color-primary;
+    border: 1px solid $color-primary;
+
+    &:hover {
+      background-color: $color-primary-hover;
+    }
+  }
+}
+
+// Manufacturer List
+.manufacturer-list {
+  border: 1px solid $color-primary;
+  border-radius: 0 0 6px 6px;
+  padding: $spacing-xl;
+  margin-top: 0px;
+
+  &__grid {
+    @include quick-access-grid;
+  }
+}
+
+// drive Selection
+.drive-selection {
+  margin-top: $spacing-xl;
+
+  &__grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: $spacing-md;
+  }
+}
+
+.drive-card {
+  @include flex-center;
+  flex-direction: column;
+  // width: 100px;
+  // height: 120px;
+  background-color: $color-white;
+  border: 1px solid $color-gray-light;
+  border-radius: $border-radius-sm;
+  cursor: pointer;
+  transition: $transition-default;
+  padding: $spacing-sm;
+  box-shadow: $box-shadow;
+  border-radius: 10px;
+
+  &:hover {
+    border-color: $color-primary;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.15);
+  }
+
+  &__icon {
+    margin-bottom: $spacing-sm;
+
+    svg {
+      display: block;
+      width: 58px;
+      height: 95px;
+    }
+  }
+
+  &__label {
+    font-family: $font-family-primary;
+    font-size: $font-size-medium;
+    font-weight: $font-weight-bold;
+    color: $color-gray-dark;
+  }
+
+  &--selected {
+    background-color: $color-primary;
+    border-color: $color-primary;
+    box-shadow: 0px 2px 4px rgba(230, 0, 18, 0.3);
+
+    .drive-card__label {
+      color: $color-white;
+    }
+
+    &:hover {
+      background-color: $color-primary-hover;
+      border-color: $color-primary-hover;
+    }
+  }
+}
+
+// Distance Bar
+.distance-bar {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: $spacing-xl;
+  padding: $spacing-xl 0;
+}
+
+.distance-input-container {
+  display: flex;
+  align-items: center;
+  gap: $spacing-xs;
+}
+
+.distance-input {
+  width: 80px;
+  height: 40px;
+  border: 1px solid #cccccc;
+  border-radius: 4px;
+  padding: 0 $spacing-sm;
+  font-family: $font-family-primary;
+  font-size: $font-size-medium-large;
+  font-weight: $font-weight-extra-bold;
+  color: $color-gray-light;
+  background-color: $color-white;
+  box-shadow: $box-shadow;
+  text-align: center;
+  outline: none;
+
+  &:focus {
+    border-color: $color-primary;
+  }
+}
+
+.distance-unit {
+  font-family: $font-family-primary;
+  font-size: $font-size-medium-large;
+  font-weight: $font-weight-extra-bold;
+  color: $color-gray-light;
+}
+
+.slider-container {
+  width: 100%;
+  position: relative;
+}
+
+.slider-track {
+  position: relative;
+  height: 12px;
+  background-color: #cccccc;
+  border-radius: 12px;
+  overflow: hidden;
+}
+
+.slider-fill {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 100%;
+  background-color: $color-primary;
+  border-radius: 12px;
+  transition: width 0.2s ease;
+}
+
+.slider {
+  position: absolute;
+  top: 50%;
+  left: 0;
+  right: 0;
+  transform: translateY(-50%);
+  width: 100%;
+  height: 12px;
+  background: transparent;
+  outline: none;
+  cursor: pointer;
+  -webkit-appearance: none;
+  appearance: none;
+
+  &::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+    width: 20px;
+    height: 20px;
+    background-color: $color-white;
+    border: 2px solid $color-primary;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 8px;
+      height: 8px;
+      background-color: $color-primary;
+      border-radius: 50%;
+    }
+  }
+
+  &::-moz-range-thumb {
+    width: 20px;
+    height: 20px;
+    background-color: $color-white;
+    border: 2px solid $color-primary;
+    border-radius: 50%;
+    cursor: pointer;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+    position: relative;
+
+    &::after {
+      content: "";
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      width: 8px;
+      height: 8px;
+      background-color: $color-primary;
+      border-radius: 50%;
+    }
+  }
+}
+.btn--confirm {
+  @include flex-center;
+  width: 128px;
+  height: 48px;
+  font-size: $font-size-medium;
+  font-weight: $font-weight-extra-bold;
+  border-radius: 4px;
+}

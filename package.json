@@ -1,0 +1,22 @@
+{
+  "name": "training-fe",
+  "version": "1.0.0",
+  "description": "Frontend training project with SCSS",
+  "main": "index.js",
+  "scripts": {
+    "build-css": "sass styles/scss/main.scss styles/main.css",
+    "watch-css": "sass --watch styles/scss/main.scss:styles/main.css",
+    "dev": "sass --watch styles/scss/main.scss:styles/main.css --style=expanded",
+    "build": "sass styles/scss/main.scss styles/main.css --style=compressed"
+  },
+  "devDependencies": {
+    "sass": "^1.69.0"
+  },
+  "keywords": [
+    "scss",
+    "frontend",
+    "training"
+  ],
+  "author": "",
+  "license": "MIT"
+}
