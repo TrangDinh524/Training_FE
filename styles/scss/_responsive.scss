@@ -1,0 +1,186 @@
+// =============================================================================
+// RESPONSIVE STYLES - Mobile First Approach
+// =============================================================================
+
+@use "variable" as *;
+@use "mixins" as *;
+
+/* Small mobile styles (up to 480px) */
+@media (max-width: 480px) {
+  .main-content {
+    margin: 0rem !important;
+  }
+
+  .header {
+    height: 4.5rem;
+
+    &__clock-icon {
+      display: flex;
+    }
+
+    &__title {
+      font-size: 1.4rem;
+      font-weight: $font-weight-extra-bold;
+      padding-left: 20%;
+    }
+  }
+
+  .btn {
+    padding: 0.5rem 0.8rem;
+    font-size: 1.1rem;
+  }
+
+  .content-header {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+
+    &__left {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.8rem;
+      margin-bottom: 1rem;
+    }
+
+    &__icon {
+      display: none;
+    }
+
+    &__title {
+      font-size: 1.8rem !important;
+      font-weight: $font-weight-extra-bold !important;
+      color: $color-primary;
+      margin: 0;
+    }
+
+    &__right {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 0.5rem;
+    }
+
+    &__selected {
+      font-size: 1.3rem !important;
+      font-weight: $font-weight-extra-bold !important;
+      color: $color-primary;
+      padding: 0.5rem 1rem;
+    }
+
+    &__check {
+      display: none;
+    }
+  }
+
+  /* Single column layouts for very small screens */
+  .quick-access__grid,
+  .manufacturer-list__grid,
+  .country-tab,
+  .sidebar,
+  .header__menu,
+  .manufacturer-btn {
+    display: none;
+  }
+
+  .drive-selection-content {
+    display: flex !important;
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  .drive-card {
+    width: 100% !important;
+    padding: 1.2rem 1rem;
+    display: flex;
+    flex-direction: row !important;
+    align-items: center !important;
+    justify-content: center !important;
+    box-shadow: $box-shadow;
+
+    &__icon svg {
+      width: 30px;
+      height: 50px;
+    }
+
+    &__label {
+      font-size: 2.1rem;
+      font-weight: $font-weight-bold;
+    }
+  }
+
+  /* Mobile Category Tabs */
+  .mobile-category-tabs {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: $color-white;
+    padding: 1rem 0.5rem;
+    box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.1);
+    position: sticky;
+    top: 0;
+    z-index: 999;
+  }
+
+  .mobile-category-tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 0.4rem;
+    background: none;
+    border: none;
+    padding: 0.8rem 0.5rem;
+    border-radius: 50%;
+    width: 60px;
+    height: 60px;
+    cursor: pointer;
+    transition: $transition-default;
+    position: relative;
+
+    &__icon {
+      width: 24px;
+      height: 24px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    &__label {
+      font-size: 1rem;
+      font-weight: $font-weight-medium;
+      color: $color-primary;
+      text-align: center;
+      line-height: 1.2;
+    }
+    &__icon svg {
+      fill: $color-primary !important;
+    }
+    &--active {
+      background-color: $color-primary;
+      box-shadow: 0px 2px 8px rgba(230, 0, 18, 0.3);
+
+      .mobile-category-tab__label {
+        color: $color-white;
+      }
+      .mobile-category-tab__icon {
+        fill: $color-white !important;
+      }
+      .mobile-category-tab__icon svg {
+        fill: $color-white !important;
+      }
+    }
+
+    &:hover:not(&--active) {
+      background-color: rgba(230, 0, 18, 0.1);
+    }
+  }
+
+  .mobile-content {
+    display: none !important;
+
+    &--active {
+      display: block !important;
+    }
+  }
+}
