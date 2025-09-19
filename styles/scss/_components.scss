@@ -109,12 +109,12 @@
 // drive Selection
 .drive-selection {
   margin-top: $spacing-xl;
+}
 
-  &__grid {
-    display: grid;
-    grid-template-columns: repeat(5, 1fr);
-    gap: $spacing-md;
-  }
+.drive-selection-content {
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: $spacing-md;
 }
 
 .drive-card {
@@ -138,6 +138,9 @@
 
   &__icon {
     margin-bottom: $spacing-sm;
+    padding: 1rem;
+    background-color: white;
+    border-radius: 6px;
 
     svg {
       display: block;

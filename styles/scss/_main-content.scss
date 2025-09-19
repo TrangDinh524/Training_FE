@@ -7,7 +7,6 @@
 .main-container {
   display: block;
   min-height: 100vh;
-  margin-top: $header-height;
 }
 .main-content {
   @include main-content-base;

@@ -16,6 +16,20 @@
     <!-- Header -->
     <header class="header">
       <div class="header__content">
+        <div class="header__clock-icon">
+          <svg
+            width="22"
+            height="22"
+            viewBox="0 0 22 22"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M10.973 22C8.12506 22 5.65396 21.0575 3.55967 19.1724C1.46539 17.2872 0.27883 14.9311 0 12.104H2.48569C2.76452 14.2522 3.71035 16.0299 5.32316 17.437C6.93598 18.8439 8.81925 19.5473 10.973 19.5473C13.3609 19.5473 15.3859 18.7183 17.0481 17.0602C18.7102 15.4021 19.5413 13.382 19.5413 11C19.5413 8.61796 18.7102 6.5979 17.0481 4.9398C15.3859 3.2817 13.3609 2.45265 10.973 2.45265C9.47995 2.45265 8.09192 2.81084 6.80891 3.52723C5.52589 4.24362 4.4928 5.24121 3.70963 6.52001H6.75352V8.96619H0.136173C0.628448 6.36045 1.89111 4.21469 3.92415 2.52892C5.9572 0.842975 8.30681 0 10.973 0C12.4981 0 13.931 0.288388 15.2719 0.865165C16.6125 1.44194 17.78 2.22616 18.7743 3.21782C19.7684 4.20966 20.5545 5.37427 21.1327 6.71164C21.7109 8.04918 22 9.47864 22 11C22 12.5214 21.7109 13.9508 21.1327 15.2884C20.5545 16.6257 19.7684 17.7903 18.7743 18.7822C17.78 19.7738 16.6125 20.5581 15.2719 21.1348C13.931 21.7116 12.4981 22 10.973 22ZM13.9731 15.7212L9.73716 11.4957V5.49367H12.1958V10.5043L15.7058 13.9992L13.9731 15.7212Z"
+              fill="#E60012"
+            />
+          </svg>
+        </div>
         <h1 class="header__title">AIP for sales</h1>
         <div class="header__actions">
           <button class="btn btn--red">
@@ -36,7 +50,6 @@
             査定をやり直す
           </button>
           <button class="header__menu">
-            <!-- <span class="hamburger"> -->
             <svg
               width="21"
               height="18"
@@ -57,11 +70,70 @@
                 fill="#E60012"
               />
             </svg>
-            <!-- </span> -->
           </button>
         </div>
       </div>
     </header>
+
+    <!-- Mobile Category Tabs -->
+    <div class="mobile-category-tabs">
+      <button class="mobile-category-tab" data-target="manufacturer">
+        <div class="mobile-category-tab__icon">
+          <svg
+            width="26"
+            height="23"
+            viewBox="0 0 26 23"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M0 23V0H13.2364V5.0096H26V23H0ZM2.78916 20.2632H5.34187V17.7584H2.78916V20.2632ZM2.78916 15.2536H5.34187V12.7488H2.78916V15.2536ZM2.78916 10.244H5.34187V7.7392H2.78916V10.244ZM2.78916 5.2344H5.34187V2.72961H2.78916V5.2344ZM7.89458 20.2632H10.4473V17.7584H7.89458V20.2632ZM7.89458 15.2536H10.4473V12.7488H7.89458V15.2536ZM7.89458 10.244H10.4473V7.7392H7.89458V10.244ZM7.89458 5.2344H10.4473V2.72961H7.89458V5.2344ZM13 20.2632H23.2108V7.7392H13V10.244H15.5527V12.7488H13V15.2536H15.5527V17.7584H13V20.2632ZM18.1054 12.7488V10.244H20.6581V12.7488H18.1054ZM18.1054 17.7584V15.2536H20.6581V17.7584H18.1054Z"
+              fill="#E60012"
+            />
+          </svg>
+        </div>
+        <span class="mobile-category-tab__label">メーカー</span>
+      </button>
+
+      <button
+        class="mobile-category-tab mobile-category-tab--active"
+        data-target="drive"
+      >
+        <div class="mobile-category-tab__icon">
+          <svg
+            width="29"
+            height="21"
+            viewBox="0 0 29 21"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M2.85794 16.805H7.79266C7.45809 16.4636 7.14609 16.0968 6.85667 15.7046C6.56726 15.3123 6.31278 14.8905 6.09325 14.4393H2.85794V16.805ZM14.5 16.805C16.295 16.805 17.8214 16.1917 19.0793 14.9652C20.3372 13.7387 20.9661 12.2503 20.9661 10.5C20.9661 8.74974 20.3372 7.26134 19.0793 6.03482C17.8214 4.80829 16.295 4.19503 14.5 4.19503C12.705 4.19503 11.1786 4.80829 9.92071 6.03482C8.66284 7.26134 8.03391 8.74974 8.03391 10.5C8.03391 12.2503 8.66284 13.7387 9.92071 14.9652C11.1786 16.1917 12.705 16.805 14.5 16.805ZM22.9068 6.56065H26.1421V4.19503H21.2073C21.5419 4.53636 21.8539 4.90317 22.1433 5.29544C22.4327 5.68772 22.6872 6.10946 22.9068 6.56065ZM0 21V10.2443H2.85794V11.6526H5.25725C5.2194 11.4581 5.19639 11.2699 5.18822 11.0881C5.18005 10.9065 5.17597 10.7105 5.17597 10.5C5.17597 7.96728 6.08067 5.81887 7.89006 4.05477C9.69924 2.29046 11.9026 1.4083 14.5 1.4083H26.1421V0H29V10.7557H26.1421V9.34738H23.7428C23.7806 9.54195 23.8036 9.73012 23.8118 9.9119C23.8199 10.0935 23.824 10.2895 23.824 10.5C23.824 13.0327 22.9193 15.1811 21.1099 16.9452C19.3008 18.7095 17.0974 19.5917 14.5 19.5917H2.85794V21H0ZM14.5006 14.3717C13.77 14.3717 13.1444 14.118 12.6238 13.6107C12.1031 13.1031 11.8427 12.4931 11.8427 11.7806C11.8427 11.2984 11.95 10.8126 12.1646 10.3233C12.3791 9.8339 12.7844 9.13646 13.3802 8.23093L14.5 6.62072L15.6198 8.23093C16.2156 9.13646 16.6209 9.8339 16.8354 10.3233C17.05 10.8126 17.1573 11.2984 17.1573 11.7806C17.1573 12.4931 16.8973 13.1031 16.3771 13.6107C15.8568 14.118 15.2313 14.3717 14.5006 14.3717Z"
+              fill="white"
+            />
+          </svg>
+        </div>
+        <span class="mobile-category-tab__label">駆動</span>
+      </button>
+
+      <button class="mobile-category-tab" data-target="distance">
+        <div class="mobile-category-tab__icon">
+          <svg
+            width="20"
+            height="11"
+            viewBox="0 0 20 11"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+          >
+            <path
+              d="M5 10.2032L0 5.20325L5 0.203247L6.4 1.60325L3.825 4.20325H16.175L13.6 1.60325L15 0.203247L20 5.20325L15 10.2032L13.6 8.80325L16.175 6.20325H3.825L6.4 8.80325L5 10.2032Z"
+              fill="#E60012"
+            />
+          </svg>
+        </div>
+        <span class="mobile-category-tab__label">走行距離</span>
+      </button>
+    </div>
 
     <div class="main-container">
       <!-- Sidebar -->
@@ -85,15 +157,19 @@
           </a>
           <a href="#" class="nav-item">
             <span class="nav-item__title">グレード</span>
+            <span class="nav-item__subtitle">XリミテッドII S AIII</span>
           </a>
           <a href="#" class="nav-item">
             <span class="nav-item__title">カラー</span>
+            <span class="nav-item__subtitle">グリーン</span>
           </a>
           <a href="#" class="nav-item">
             <span class="nav-item__title">評価点</span>
+            <span class="nav-item__subtitle">4.0</span>
           </a>
-          <a href="#" class="nav-item">
+          <a href="#distance" class="nav-item">
             <span class="nav-item__title">走行距離</span>
+            <span class="nav-item__subtitle">70.1万km</span>
           </a>
           <a href="#" class="nav-item">
             <span class="nav-item__title">車検満了日</span>
@@ -108,7 +184,7 @@
       </aside>
 
       <!-- Main Content 1 -->
-      <main class="main-content" id="manufacturer">
+      <main class="mobile-content main-content" id="manufacturer">
         <!-- Title Section -->
         <div class="content-header">
           <div class="content-header__left">
@@ -324,7 +400,7 @@
       </main>
 
       <!-- Main Content 2 -->
-      <main class="main-content" id="drive">
+      <main class="mobile-content main-content" id="drive">
         <!-- Title Section -->
         <div class="content-header">
           <div class="content-header__left">
@@ -364,7 +440,7 @@
         </div>
 
         <section class="drive-selection">
-          <div class="drive-selection__grid">
+          <div class="drive-selection-content">
             <button class="drive-card" data-type="FF">
               <div class="drive-card__icon">
                 <svg
@@ -642,7 +718,7 @@
       </main>
 
       <!-- Main Content 3 -->
-      <main class="main-content" id="distance">
+      <main class="mobile-content main-content" id="distance">
         <!-- Title Section -->
         <div class="content-header">
           <div class="content-header__left">
@@ -707,23 +783,83 @@
     </div>
 
     <script>
-      // Sidebar navigation active state
       document.addEventListener("DOMContentLoaded", function () {
+        // Get all navigation elements
+        const mobileTabs = document.querySelectorAll(".mobile-category-tab");
+        const mainContents = document.querySelectorAll(".main-content");
         const navItems = document.querySelectorAll(".nav-item");
 
-        navItems.forEach((item) => {
-          item.addEventListener("click", function (e) {
-            e.preventDefault();
-
-            // Remove active class from all nav items
-            navItems.forEach((navItem) => {
-              navItem.classList.remove("nav-item--active");
-            });
-
-            // Add active class to clicked item
-            this.classList.add("nav-item--active");
+        // Helper function to show specific content
+        function showContent(targetID) {
+          console.log("showContent", targetID);
+          mainContents.forEach((content) => {
+            content.classList.remove("mobile-content--active");
           });
-        });
+
+          const targetContent = document.getElementById(targetID);
+          if (targetContent) {
+            targetContent.classList.add("mobile-content--active");
+          }
+        }
+
+        // Mobile navigation setup
+        function setupMobileNavigation() {
+          mobileTabs.forEach((tab) => {
+            tab.addEventListener("click", function () {
+              // Remove active from all tabs
+              mobileTabs.forEach((t) =>
+                t.classList.remove("mobile-category-tab--active")
+              );
+
+              // Add active to clicked tab
+              this.classList.add("mobile-category-tab--active");
+
+              // Show corresponding content
+              const target = this.getAttribute("data-target");
+              showContent(target);
+            });
+          });
+
+          // Initialize with manufacturer content
+          showContent("drive");
+        }
+
+        // Desktop navigation setup
+        function setupDesktopNavigation() {
+          navItems.forEach((item) => {
+            item.addEventListener("click", function (e) {
+              e.preventDefault();
+
+              // Remove active from all nav items
+              navItems.forEach((navItem) => {
+                navItem.classList.remove("nav-item--active");
+              });
+
+              // Add active to clicked item
+              this.classList.add("nav-item--active");
+
+              // Handle smooth scrolling
+              const targetId = this.getAttribute("href");
+              if (targetId && targetId !== "#") {
+                const targetSection = document.querySelector(targetId);
+                if (targetSection) {
+                  targetSection.scrollIntoView({
+                    behavior: "smooth",
+                    block: "start",
+                  });
+                }
+              }
+            });
+          });
+        }
+
+        // Handle different navigation types
+        if (mobileTabs.length > 0) {
+          setupMobileNavigation();
+        }
+        if (navItems.length > 0) {
+          setupDesktopNavigation();
+        }
       });
     </script>
   </body>
